@@ -23,10 +23,18 @@ body {
     flex-direction: column;
 }
 
-.box {
-    background-color: yellow;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-.box:hover {
-    background-color: red;
+.box {
+    background-color: white;
 }
+
+/* .box:hover {
+    background-color: red;
+} */

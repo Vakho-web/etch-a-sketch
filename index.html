@@ -10,14 +10,15 @@
 <body>
     <h1>Etch-a-sketch</h1>
     <div class="header">
-        <h6>Select the size</h6>
-        <input type="text">
-        <button id="sizeBtn" class="btn">Select</button>
+        <h4>Select the size</h4>
+        <button id="sizeBtn" class="btn" onclick="getSize()">Choose size</button>
+        <p id="message"></p>
     </div>
     <div class="main">
-        <div class="board" id="board">
-
-        </div>
+        <div class="board" id="board"></div>
+    </div>
+    <div class="footer">
+        <button id="clearBtn">Clear All</button>
     </div>
 </body>
 </html>
