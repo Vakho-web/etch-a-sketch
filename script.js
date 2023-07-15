@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             createBoard(input);
             message.innerText = 'You can draw';
+            clearAll()
         }
         
     }
@@ -40,12 +41,15 @@ function createBoard(size) {
 }
 
 const clearBtn = document.getElementById('clearBtn');
-clearBtn.addEventListener('click', function() {
+clearBtn.addEventListener('click', clearAll);
+
+
+function clearAll() {
     const divs = document.querySelectorAll('div.box');
     divs.forEach((div) => {
-        div.style.backgroundColor = "white";
-    });
-});
+    div.style.backgroundColor = "white";
+    })
+}
 
 });
 
